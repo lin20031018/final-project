@@ -22,4 +22,21 @@ function plusSlides(a){
 }
 plusSlides(slideIndex);
 
+function openDialog() {
+    document.getElementById('overlay').style.display = 'flex';
+  }
+
+  function closeDialog() {
+    var agreeCheckbox = document.getElementById('agreeCheckbox');
+    var agreed = agreeCheckbox.checked;
+
+    if (agreed) {
+      alert("感謝您的同意！");
+      
+      document.getElementById('overlay').style.display = 'none'; 
+    } else {
+      alert("很抱歉，您似乎不同意。");
+    }
+  }
+
 

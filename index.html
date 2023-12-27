@@ -6,11 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <title>final project</title>
-   </head>
+    <script>
+  window.onload = function() {
+    openDialog();
+  };
+    </script>
+   </head> 
+   <div id="overlay">
+    <div id="dialog">
+      <h2>請問您是否同意cookie條款</h2>
+      <label for="agreeCheckbox">
+        <input type="checkbox" id="agreeCheckbox" onchange="closeDialog()"> 我同意</label>
+    </div>
+  </div>
+  
+   
+           
 <body>
-    <div>
-        <header>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+     <header>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         </header>
         <nav>
             <ul>
@@ -22,7 +37,7 @@
                     <li><a href="maintenance/haha.html">保養液</a></li>
                   </ul>
                 </li>
-                <li><a href="aboutus - 複製/aboutus.html">關於我們</a>
+                <li><a href="aboutuss/aboutus.html">關於我們</a>
                 </li>
                 <li><a href="place_design/place.html">門市據點</a></li>
                 <li><form class="search-form">
