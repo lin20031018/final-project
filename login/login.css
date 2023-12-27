@@ -1,0 +1,38 @@
+* {
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+
+}
+
+form {
+    position: relative;
+    margin: 5% auto;
+    padding: 0px;
+    width: 15%;
+    height: 50%;
+    text-align: center;
+
+}
+
+.button {
+    cursor: pointer;
+    border: 2px solid whitesmoke;
+    color: whitesmoke;
+    background-color: black;
+    border-radius: 5px;
+    padding: 10px;
+
+
+}
+
+fieldset {
+    background-color: aqua;
+    border-radius: 5%;
+}
+
+.a01 {
+    margin: 5px;
+}

@@ -1,0 +1,49 @@
+* {
+    margin: 0 auto;
+}
+
+.a01 {
+    max-width: 50%;
+    max-height: 30%;
+    background: blue;
+    margin-top: 10px;
+    padding: 10px 50px 1% 50px;
+    z-index: 0;
+    border-radius: 2%;
+}
+
+.a02 {
+    float: left;
+    border-radius: 5%;
+    border: solid forestgreen;
+    padding: 0;
+    margin-top: 2%;
+    margin-left: 2%;
+    z-index: 2;
+    max-width: 250px;
+    max-height: 250px;
+
+
+}
+
+img,
+.a02 {
+    border-radius: 5%;
+}
+
+.a03 {
+    background-color: aqua;
+    text-align: end;
+    z-index: 1;
+    border-radius: 5%;
+    padding-right: 3%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    height: 25%;
+
+
+}
+
+.clear {
+    float: none;
+}

@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    /*max-width: 1024px;*/
+    margin: 0 auto;
+}
+
+body {
+    background-color: #f5cc99;
+    margin: 0px;
+}
+
+header {
+    background-color: #92caed;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+}
+
+header img {
+    max-width: 1000px;
+    max-height: 300px;
+}
+
+nav {
+    background-color: #e5cad4;
+    font-family: Arial;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+
+}
+
+main {
+    padding: 20px;
+    display: grid;
+    max-width: 70%;
+    grid-template-columns: 2fr;
+    grid-auto-flow: row;
+    grid-gap: 10px;
+}
+
+main img {
+    width: 250px;
+    max-height: 150px;
+}
+
+.outcard {
+    background-color: rgb(233, 12, 178);
+    padding: 1px;
+    margin: 60px 10px;
+    margin-top: -5%;
+    border-radius: 15px;
+    background-size: cover;
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(1, 1fr);
+
+}
+
+.card {
+    text-align: left;
+    line-height: 1cm;
+    background-color: white;
+    max-height: 400px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 15px;
+    background-image: url(image/card_img.jpg);
+    background-size: cover;
+    flex: 2 1 300px;
+
+}
+
+.car {
+    text-align: left;
+    color: white;
+    background-color: rgb(71, 126, 208);
+    padding: 10px;
+    margin: 20px;
+    margin-left: auto;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #cda8b8;
+    color: #444444;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.slideshow-container {
+    padding: 0px 50px 0px 50px;
+    max-width: auto;
+    position: relative;
+    margin: auto;
+    top: 10%;
+}
+
+.singleSlide {
+    display: flex;
+}
+
+.singleSlide,
+img {
+    width: 100%;
+    height: 631px;
+    object-fit: cover;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0px 0px 3px;
+    border: transparent solid 1px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: rgb(232, 185, 193);
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    border: transparent solid 1px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: rgb(232, 185, 193);
+}
+
+.prev:hover,
+.next:hover {
+    background-color: plum;
+    color: white !important;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}

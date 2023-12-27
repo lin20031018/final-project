@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>教學意見調查表</h2>
+    <form method="post" action="mailto:a0965033856@gmail.com" enctype="text/plain">
+        <fieldset>
+            <legend>個人及課程資料</legend>
+        
+                1.科目名稱:<input type="text" name="subject" max="20"><br>
+                2.請選擇系所:<select size="" name="department">
+                    <option value="IM">資管系</option>
+                    <option value="BA">企管系</option>
+                    <option value="AC">會計系</option>
+                </select><br>
+                3.講師:<input type="text" name="lecture" max="20"><br>
+                4.性別:<input type="radio" name="sex" value="男性" id="男性"><label for="男性">男性</label>
+                        <input type="radio" name="sex" value="女性" id="女性"><label for="女性">女性</label><br>
+                5.開課日期:<input type="date" name="selectdate"/><br>
+        
+        </fieldset>
+        <fieldset>
+            <legend>意見調查</legend>
+                1.這門課你的出席狀況是
+                <input type="radio" name="a" value="a1">沒有缺課
+                <input type="radio" name="a" value="a2">缺課1~3次
+                <input type="radio" name="a" value="a3">缺課4~6次
+                <input type="radio" name="a" value="a4">缺課6次以上<br>
+                2.你對這門課的學習態度
+                <input type="radio" name="b" value="b1">很認真
+                <input type="radio" name="b" value="b2">還算認真
+                <input type="radio" name="b" value="b3">很不認真<br>
+                3.修習這門課的原因(可複選)
+                <input type="checkbox" name="c" value="1">必修
+                <input type="checkbox" name="c" value="2">湊學分
+                <input type="checkbox" name="c" value="3">個人興趣
+                <input type="checkbox" name="c" value="4">其他原因<br>
+                4.請簡述你對此門課程的期望或改進的建議:<br>
+                <textarea name="d" cols="50" rows="10" wrap="hard"></textarea>
+        </fieldset>
+        <input type="submit" value="送出"/>
+        <input type="reset" value="重寫"/>
+    </form>
+</body>
+</html>
