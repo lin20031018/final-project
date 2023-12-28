@@ -10,52 +10,42 @@
 </head>
 <body>
     <div class="a01">
-        <div class="a02">
+        <div class="a02" id="item1">
             <img src="pic01.jpg" alt="" width="250px" height="250px">
-            
-            
-        </div>
-        <div class="a03">
-                <h1>name</h1><br/>
-                <h5>lalalalalalalalalalalalalalalalalalalalalalalalala</h5><br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <h4>庫存數量:</h4><p></p>
-                <h3>price</h3><br/>
-                <div>
+            <div class="title"><h1>name1</h1></div>               <!-- 商品名稱 -->
+            <div> 
+                <h5>lalalalalalalalalalalalalalalalalalalalalalalalala</h5> <!-- 商品描述 -->
+                <h4>型號</h4>
+                <h4>度數</h4>
+                <h4>庫存數量:</h4>
+                <h4>價格</h4>
+                <label>數量:</label><span class="price1">1500</span>$
                     <input type="button" value="-" class="item_button" onclick="minus(0)">
                     <input type="text" value="1" class="item_num">
                     <input type="button" value="+" class="item_button" onclick="add(0)">
-                </div>
-                
+            </div>
+            <button onclick="addTocart(item1)">結帳</button>        
         </div>
-    </div>
-    <div class="clear"></div>
-    <div class="a01">
-        <div class="a02">
+        <div class="a02" id="item2">
             <img src="pic01.jpg" alt="" width="250px" height="250px">
-            
-            
-        </div>
-        <div class="a03">
-                <h1>name</h1><br/>
-                <h5>lalalalalalalalalalalalalalalalalalalalalalalalala</h5><br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <h4>庫存數量:</h4><p></p>
-                <h3>price</h3><br/>
-                <div>
+            <div class="title"><h1>name2</h1></div>               <!-- 商品名稱 -->
+            <div> 
+                <h5>lalalalalalalalalalalalalalalalalalalalalalalalala</h5> <!-- 商品描述 -->
+                <h4>型號</h4>
+                <h4>度數</h4>
+                <h4>庫存數量:</h4>
+                <h4>價格:</h4><span class="price2">1000</span>$
+                <label>數量:</label>
                     <input type="button" value="-" class="item_button" onclick="minus(1)">
                     <input type="text" value="1" class="item_num">
                     <input type="button" value="+" class="item_button" onclick="add(1)">
-                </div>
-                
+            </div>
+            <button onclick="addTocart(item2)">結帳</button>        
         </div>
     </div>
-    <div class="clear"></div>
+    <div class="cart" id="cart">
+        <div class="title">結帳區</div><hr/>
+        <div id="title"></div>
+    </div>
 </body>
 </html>

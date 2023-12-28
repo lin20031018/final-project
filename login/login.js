@@ -1,9 +1,16 @@
 function chkPwd() {
+    var theId = document.getElementById("id").value;
     var thePwd = document.getElementById("password").value;
     var thePwd01 = document.getElementById("password_check").value;
     var flag1 = false, flag2 = false;
-    if (thePwd == "" || thePwd01 == "")
-    alert("不可空白");
+    
+    
+    if (thePwd == "" || thePwd01 == "" || theId == ""){
+        alert("不可空白");
+        return false;
+    }
+    
+    
 
     else if(thePwd.length>=6){
 
@@ -26,22 +33,26 @@ function chkPwd() {
                 break;
 
         }
-        if ( thePwd != thePwd01)
-        alert("密碼不一致")
+        if ( thePwd != thePwd01){
+            alert("密碼不一致");
+            return false;
+        }
+        
 
         if (flag1 && flag2 && thePwd == thePwd01){
-            alert("可以使用");
+            return true;
         }
-        if (!flag1 || !flag2)
-            alert("密碼須包含至少一個字母與一個數字")
+        if (!flag1 || !flag2){
+            alert("密碼須包含至少一個大寫字母與一個數字");
+            return false;
+        }
     }
     else{
-        alert("長度不正確")
+        alert("長度不正確需至少為6位數");
+        return false;
     }
     
-
-
-
+   
 }
 
 function login_in() {
@@ -49,4 +60,25 @@ function login_in() {
     var pwd = document.getElementById("password").value;
     if (id=="" || pwd=="")
         alert("不可空白");
+        return false;
+}
+
+function a123(){
+    let yn=document.getElementsByName("personal");
+    let ynchk = false; 
+        
+        for (var i=0;i<yn.length;i++) {
+            if (yn[i].checked) {
+                ynchk = true;
+                break;
+            }
+        }
+
+        if(ynchk){
+            return true;
+        }else{
+            alert("請圈選是否蒐集個人資料");
+            return false;
+        }
+
 }

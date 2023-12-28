@@ -9,7 +9,7 @@
     <script src="login.js"></script>
 </head>
 <body>
-    <form method="post" action="">
+    <form method="post" action="" id="register" onclick="" onsubmit="chkPwd(),a123()">
         <fieldset>  
             <h2>會員註冊</h2>
             <br/>
@@ -17,17 +17,37 @@
                 帳號:<input type="text" placeholder="輸入帳號" onfocus="this.placeholder=''" onblur="this.placeholder='輸入帳號'" name="id" id="id" style="padding: 5px; width: 230px;" /><br/>
             </div>
             <div class="a01">
-            密碼:<input type="password" placeholder="輸入密碼(須包含一個大寫字母和數字)" onfocus="this.placeholder=''" onblur="this.placeholder='輸入密碼(須包含一個大寫字母和數字)'" name="password" id="password" style="padding: 5px;width:230px" /><br/>
+                密碼:<input type="password" placeholder="輸入密碼(須包含一個大寫字母和數字)" onfocus="this.placeholder=''" onblur="this.placeholder='輸入密碼(須包含一個大寫字母和數字)'" name="password" id="password" style="padding: 5px;width:230px" /><br/>
             </div>
             <div class="a01">
-            確認密碼:<input type="password" placeholder="再輸入一次密碼" onfocus="this.placeholder=''" onblur="this.placeholder='再輸入一次密碼'" name="password_check" id="password_check" style="padding: 5px;width: 198px;"/><br/>
+                確認密碼:<input type="password" placeholder="再輸入一次密碼" onfocus="this.placeholder=''" onblur="this.placeholder='再輸入一次密碼'" name="password_check" id="password_check" style="padding: 5px;width: 198px;"/><br/>
             </div>
-            <div class="a01">e-mail:<input type="email" placeholder="輸入電子信箱" onfocus="this.placeholder=''" onblur="this.placeholder='輸入電子信箱'" name="email" id="email" style="padding: 5px;width: 222px;"><br/>
+            <div class="a01">
+                e-mail:<input type="text" placeholder="輸入有效電子信箱" onfocus="this.placeholder=''" onblur="this.placeholder='輸入有效電子信箱'" name="email" id="email" style="padding: 5px;width: 222px;"><br/>
+            </div>
+            <div class="a01">
+                近視度數<br/>
+                左眼:
+                <select size="1" name="lefteye">
+                    <option>1.00</option>
+                    <option>1.25</option>
+                    <option>1.50</option>
+                    <option>1.75</option>
+                </select>
+                右眼:
+                <select size="1" name="righteye">
+                    <option>1.00</option>
+                    <option>1.25</option>
+                    <option>1.50</option>
+                    <option>1.75</option>
+                </select>
             </div> 
             <br/>
+            是否同意蒐集個人資料<input type="radio" name="personal" value="yes"/>同意<input type="radio" name="personal" value="no"/>不同意
+            <br/>
+            已成為會員?前往<a href="login/login.html">登入</a>
             <input class="button" type="submit" value="註冊" >
             <input class="button" type="reset" value="重填"/>
-            <input class="button" type="button" value="test" onclick="chkPwd()">
         </fieldset>
     </form>
 </body>

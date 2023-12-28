@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shpcart</title>
+    <link rel="stylesheet" href="shpcart.css">
+    <script src="shpcart copy.js"></script>
+</head>
+<body>
+    <div class="a01">
+        <div class="a02" id="item1">
+            <img src="pic01.jpg" alt="" width="250px" height="250px">
+            <div class="title"><h1>name1</h1></div>               <!-- 商品名稱 -->
+            <div> 
+                <h5>商品描述</h5> <!-- 商品描述 -->
+                <h4>度數</h4>
+                <h4>庫存數量:</h4>
+                <h4>價格<span class="price1">1500</span>$</h4>
+                <label>數量:</label>
+                    <input type="button" value="-" class="item_button" onclick="minus(0)"> <!--增加的商品要改minus的變數--> 
+                    <input type="text" value="1" class="item_num">
+                    <input type="button" value="+" class="item_button" onclick="add(0)"> <!--增加的商品要改add的變數--> 
+            </div>
+            <button onclick="addTocart(item1)">加入清單</button>     <!--增加的商品要改addTocart的變數-->    
+        </div>
+        <div class="a02" id="item2">
+            <img src="pic01.jpg" alt="" width="250px" height="250px">
+            <div class="title"><h1>name2</h1></div>               <!-- 商品名稱 -->
+            <div> 
+                <h5>商品描述</h5> <!-- 商品資訊放這裡 -->
+                <h4>度數</h4>
+                <h4>庫存數量:</h4>
+                <h4>價格:<span class="price2">1000</span>$</h4>
+                <label>數量:</label>
+                    <input type="button" value="-" class="item_button" onclick="minus(1)">
+                    <input type="text" value="1" class="item_num">
+                    <input type="button" value="+" class="item_button" onclick="add(1)">
+            </div>
+            <button onclick="addTocart(item2)">加入清單</button>         
+        </div>
+    </div>
+    <!--右側的結帳清單-->
+    <div class="cart" id="cart">
+        <div class="title">結帳清單</div><hr/>
+        <div id="title"></div>
+        <button onclick="showCheckoutModal()">前往結帳頁面</button>
+    </div>
+    <!--先隱藏的結帳頁面-->
+    <form method="post" action="">
+    <div id="checkoutModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCheckoutModal()">&times;</span>
+            <h2>結帳清單</h2>
+            <div id="selectedItemsContainer"></div>
+            <label for="paymentMethod">付款方式:</label>
+            <select id="paymentMethod">
+                <option value="cash" id="cash">現金付款</option>
+            </select>
+            <label for="shippingMethod">運送方式:</label>
+            <select id="shippingMethod">
+                <option value="home" id="home">宅配到家</option>
+            </select>
+            請輸入地址:<input type="text" id="address">
+            <div id="total-amount">總金額: $0.00</div>
+            <input type="submit" class="button" value="結帳" >
+       
+        </div> 
+    </div>
+    </form>
+</body>
+</html>

@@ -2,13 +2,12 @@
     margin: 0px;
 }
 
-.outtcard {
+.gridd {
     max-width: 100%;
     display: grid;
-    grid-template: 600px 250px 250px/100%;
+    grid-template: 500px 400px 400px/100%;
     position: relative;
     top: 80px;
-
 
 }
 
@@ -41,21 +40,7 @@ header {
     background-color: rgb(175, 144, 236);
 }
 
-.card {
-    /*background-color: white;*/
-    text-align: left;
-    line-height: 1cm;
-    background-color: white;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 15px;
-    max-width: 400px;
-    max-height: 300px;
-    overflow: visible;
-    background-image: url(image/card_img.jpg);
-    background-size: cover;
-    flex: 2 1 300px;
-}
+
 
 .outcard {
     background-color: rgb(233, 12, 178);
@@ -67,13 +52,85 @@ header {
     align-items: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    height: 280px;
+    /*改card寬距
     grid-template-rows: repeat(1, 1fr);
-    /**/
-    /*grid-template-columns:repeat(5, 1fr); */
-    position: relative;
+
+    grid-template-columns: repeat(5, 1fr);
+    position: relative;*/
 
 }
 
+.outcard02 {
+    background-color: rgb(233, 12, 178);
+    padding: 1px;
+    margin: 30px 10px;
+    border-radius: 15px;
+    block-size: cover;
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 280px;
+
+    /*改card寬距
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    position: relative;*/
+
+}
+
+.card-container {
+    perspective: 1000px;
+}
+
+
+.card {
+    margin-top: -40px;
+    width: 300px;
+    height: 220px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+}
+
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+
+
+.front,
+.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.front {
+    /* 前面的样式 */
+    background-color: rgb(224, 149, 226);
+    text-align: center;
+    line-height: 1.5;
+    padding: 20px;
+    border-radius: 15px;
+    /* 前面图片 */
+    background-image: url(image/card_img.jpg);
+    background-size: cover;
+}
+
+.back {
+    /* 背面的样式 */
+    background-color: lightblue;
+    text-align: center;
+    line-height: 1.5;
+    padding: 20px;
+    border-radius: 15px;
+    transform: rotateY(180deg);
+    right: 0px;
+}
 
 
 footer {

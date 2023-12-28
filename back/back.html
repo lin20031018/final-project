@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>後台管理</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>後台管理系统</h1>
+    </header>
+
+    <main>
+        <section class="product-management">
+            <h2>新增商品</h2>
+            
+            <form action="/upload_product" method="post">
+                
+                <input type="text" name="product_name" placeholder="商品名稱">
+                <input type="number" name="product_price" placeholder="商品價格">
+                <textarea name="product_description" placeholder="商品描述"></textarea>
+                <input type="file" name="product_image" accept="image/*">
+                <button type="submit">儲存</button>
+                    <br>
+                <input type="text" name="product_name" placeholder="商品名稱">
+                <input type="number" name="product_price" placeholder="商品價格">
+                <textarea name="product_description" placeholder="商品描述"></textarea>
+                <input type="file" name="product_image" accept="image/*">
+                <button type="submit">儲存</button>
+            </form>
+        </section>
+
+        
+        <section class="order-receiving">
+            <h2>接收訂單</h2>
+         
+           
+            <ul class="order-list">
+                <li>訂單標號: cyim01   商品A  $50  <button>更動訂單</button></li>
+                <li>訂單編號: cyim02   商品B  $30  <button>更動訂單</button></li>
+
+            </ul>
+        </section>
+
+        <section class="purchase-records">
+            <h2>購物紀錄</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>編號</th>
+                        <th>姓名</th>
+                        <th>商品</th>
+                        <th>金额</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>cyim01</td>
+                        <td>AAA</td>
+                        <td>海昌彩色日拋</td>
+                        <td>$150</td>
+                    </tr>
+                    <tr>
+                        <td>cyim02</td>
+                        <td>BBB</td>
+                        <td>安儷透明月拋</td>
+                        <td>$130</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>2023 cyim demo</p>
+    </footer>
+</body>
+
+</html>

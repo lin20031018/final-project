@@ -9,7 +9,7 @@
     <script src="login.js"></script>
 </head>
 <body>
-    <form method="post" action="">
+    <form name="loginform" method="post" action="" >
         <fieldset>  
             <h2>會員登入</h2>
             <br/>
@@ -24,9 +24,12 @@
             
             <br/>
             <p style="text-align:center ;">尚未成為會員?前往<a href="register.html">註冊</a></p><br/>
-            <input class="button" type="submit" value="登入"/>
-            <input class="button" type="reset" value="重填"/>
-            <input class="button" type="button" value="test" onclick="login_in()"/>
+            <div style="text-align: center;">
+                <input class="button" type="submit" value="登入"/>
+                <input class="button" type="reset" value="重填"/>
+                <input class="button" type="button" value="test" onclick="login_in()"/>
+            </div>
+            
         </fieldset>
     </form>
     
