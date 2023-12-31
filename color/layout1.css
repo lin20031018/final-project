@@ -8,7 +8,7 @@ body {
     margin: 0px;
 }
 
-header {
+nav {
     background-color: #f5ebe0;
     color: black;
     text-align: center;
@@ -50,9 +50,9 @@ ul ul {
     background-color: #e3d5ca;
   }
 
-nav {
+header {
     width: 100%;
-    height: 30%;
+    height: 70%;
     z-index: 1;
     left: 10%;
 
@@ -104,8 +104,31 @@ main {
     background-color: #2980b9;
   }
 
-
+.search-form{
+    text-align: center;
+}
 
 aside {
     grid-area: 4/1/5/3;
+}
+
+h1{
+    text-align: center;
+}
+
+.search-form {
+  position: relative;
+  top: 55%;
+  text-align: center;
+}
+
+.search-input {
+  width: 200px;
+  height: 18px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.text1{
+  text-align: right;
 }

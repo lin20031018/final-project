@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #f5ebe0;
+    margin: 0px;
+}
+
+nav {
+    background-color: #f5ebe0;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    margin: 0px;
+}
+
+
+
+ul ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 150px;
+  }
+  /* 顯示子清單 */
+  ul li:hover > ul {
+    display: block;
+  }
+  /* 修飾樣式 */
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #d6ccc2;
+    display: flex;
+  }
+  ul li {
+    position: relative;
+  }
+  ul a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: black;
+  }
+  ul a:hover {
+    background-color: #e3d5ca;
+  }
+
+header {
+    width: 100%;
+    height: 70%;
+    z-index: 1;
+    left: 10%;
+
+}
+
+footer {
+    background-color: #d6ccc2;
+    color: #444444;
+    width: 300%;
+    height: auto;
+}
+
+main {
+    padding: 30px;
+    display: grid;
+    width: 100%;
+
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 1cm;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    background-image: url(image/螢幕擷取畫面\ 2023-12-16\ 174132.png);
+    background-size: cover;
+ 
+    width: auto;
+    height: auto;
+
+}
+
+
+.add-to-cart-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-to-cart-btn:hover {
+    background-color: #2980b9;
+  }
+
+.search-form{
+    text-align: center;
+}
+
+aside {
+    grid-area: 4/1/5/3;
+}
+
+h1{
+    text-align: center;
+}
+
+.search-form {
+  position: relative;
+  top: 55%;
+  text-align: center;
+}
+
+.search-input {
+  width: 200px;
+  height: 18px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.text1{
+  text-align: right;
+}

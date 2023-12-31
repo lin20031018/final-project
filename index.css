@@ -6,7 +6,7 @@
 
     width: auto;
     display: grid;
-    grid-template: 700px 350px 400px 250px 250px/100%;
+    grid-template: 700px 350px 400px 250px /100%;
     /*grid-auto-flow: row;
 
     /*grid-template-areas: 
@@ -19,7 +19,8 @@
 header {
     background-color: #496e4c;
     position: fixed;
-    width: 5%;
+    width: 20%;
+    /*調整大小 owo*/
     height: 11%;
     z-index: 1;
     float: left;
@@ -33,45 +34,58 @@ ul ul {
     display: none;
     position: absolute;
     left: 0;
-    top: 100%;
+    top: 80px;
+    /*將顯示的選單向下移到合適位置 owo*/
     width: 150px;
-  }
-  /* 顯示子清單 */
-  ul li:hover > ul {
+}
+
+/* 顯示子清單 */
+ul li:hover>ul {
     display: block;
-  }
-  /* 修飾樣式 */
-  ul {
+
+}
+
+/* 修飾樣式 */
+ul {
     list-style: none;
     margin: 0;
     padding: 0;
     background-color: #333;
     display: flex;
-  }
-  ul li {
+}
+
+ul li {
     position: relative;
-  }
-  ul a {
+}
+
+ul a {
     display: block;
     padding: 10px 15px;
     text-decoration: none;
     color: #fff;
-  }
-  ul a:hover {
+}
+
+ul a:hover {
     background-color: #555;
-  }
+}
 
 nav {
-    background-color: aqua;
+    background-color: #333;
+    /*更改原本nav區塊的顏色跟列表清單一樣 owo */
     position: fixed;
     width: 80%;
     height: 11%;
     z-index: 1;
-    left: 10%;
+    left: 20%;
 
 }
 
-#overlay{
+.florig {
+    float: right;
+    /*讓nav向最右邊移動 owo */
+}
+
+#overlay {
     display: none;
     position: fixed;
     z-index: 3;
@@ -79,11 +93,12 @@ nav {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     justify-content: center;
     align-items: center;
 }
-#dialog{
+
+#dialog {
     text-align: center;
     font-size: larger;
     background-color: white;
@@ -152,14 +167,14 @@ a {
     background-color: yellow;
 }
 
-.m04 {
+/*m04 {
     grid-row: 4/5;
     grid-column: 1/2;
     background-color: green;
-}
+}*/
 
 .act {
-    grid-row: 5/6;
+    grid-row: 4/5;
     grid-column: 1/2;
     background-color: blue;
 }
@@ -167,7 +182,7 @@ a {
 footer {
     background-color: #588157;
     width: 100%;
-    height: auto;
+    height: 200px;
 
 
 }
@@ -258,12 +273,13 @@ img {
     background: rgba(0, 0, 0, 0.5);
     justify-content: center;
     align-items: center;
-  }
-  #dialog {
+}
+
+#dialog {
     background: white;
     padding: 20px;
     border-radius: 5px;
-  }
+}
 
 @keyframes fade {
     0% {
@@ -273,4 +289,15 @@ img {
     100% {
         opacity: 1;
     }
+}
+
+.search-form {
+    position: relative;
+    top: 55%;
+}
+
+.search-input {
+    width: 200px;
+    height: 25px;
+    margin-right: 10px;
 }
