@@ -81,3 +81,8 @@ footer {
         height: 30%;
     }
 }
+
+.shpname {
+    position: relative;
+    top: 400px;
+}
