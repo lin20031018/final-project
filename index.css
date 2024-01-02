@@ -168,7 +168,7 @@ a {
 .m03 {
     grid-row: 3/4;
     grid-column: 1/2;
-    background-color: #a112e4;
+    background-color: #ffffff;
 }
 
 /*m04 {
@@ -276,8 +276,8 @@ img {
 
 .prev:hover,
 .next:hover {
-    background-color: green;
-    color: blue !important;
+    background-color: #ffd6ff;
+    color: #ffffff !important;
 }
 
 .fade {
@@ -337,12 +337,14 @@ img {
 }
 
 .card-container {
+    margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center; /* Add this line to center the flex items */
 }
 
 .card-container img {
+    
     padding: 10px 100px;
     display: block; /* Ensures the images won't have extra space */
     margin: auto; /* Centers the images horizontally */

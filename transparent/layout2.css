@@ -4,12 +4,12 @@
 }
 
 body {
-    background-color: #f5ebe0;
+    background-color: #e5dff5;
     margin: 0px;
 }
 
 nav {
-    background-color: #f5ebe0;
+    background-color: #e5dff5;
     color: black;
     text-align: center;
     padding: 20px;
@@ -34,7 +34,7 @@ ul ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    background-color: #d6ccc2;
+    background-color: #c8b6ff;
     display: flex;
   }
   ul li {
@@ -44,10 +44,10 @@ ul ul {
     display: block;
     padding: 10px 15px;
     text-decoration: none;
-    color: black;
+    color: #a112e4;
   }
   ul a:hover {
-    background-color: #e3d5ca;
+    background-color: #ffd6ff;
   }
 
   header {
@@ -59,7 +59,7 @@ ul ul {
   } 
 
   footer {
-    background-color: #d6ccc2;
+    background-color: #c8b6ff;
     color: #444444;
     width: 300%;
     height: auto;
@@ -132,3 +132,4 @@ h1{
 .text1{
   text-align: right;
 }
+
