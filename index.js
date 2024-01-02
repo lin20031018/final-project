@@ -1,4 +1,4 @@
-let slideIndex=1;
+let slideIndex=5;
 
 function showSlides(props){
     let i;
