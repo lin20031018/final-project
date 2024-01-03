@@ -233,3 +233,10 @@ textarea {
   border-bottom: 1px solid black;
   outline: none;
 }
+
+.contant {
+  object-fit: cover;
+  width: 30px;
+  height: 30px;
+
+}
