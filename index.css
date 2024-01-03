@@ -160,9 +160,11 @@ a {
 .graph01 {
     display: flex;
     padding: 50px;
-    gap: 25px;
+    gap: 10px;
     justify-content: center;
     align-items: center;
+    
+
 }
 
 .m03 {
@@ -180,7 +182,18 @@ a {
 .act {
     grid-row: 4/5;
     grid-column: 1/2;
-    background-color: blue;
+    background-color: #ffffff;
+}
+
+.acttitle {
+    position: relative;
+    left: 40px;
+    top: 50px;
+    font-size: 50px;
+    background-color: #c8b6ff;
+    border-radius: 20px;
+    max-width: 400px;
+    text-align: center;
 }
 
 .map {
@@ -188,6 +201,7 @@ a {
     justify-content: center;
     align-items: center;
     padding: 5%;
+
 }
 
 .outside {
@@ -195,7 +209,7 @@ a {
     text-align: left;
     padding: 5%;
     height: 50px;
-    width: 100%;
+    width: 90%;
 }
 
 .imgposition {
@@ -212,10 +226,11 @@ a {
 
 
 footer {
+    position: relative;
+    top: 200px;
     background-color: #588157;
     width: 100%;
-    height: 200px;
-
+    height: 300px;
 
 }
 

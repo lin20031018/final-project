@@ -28,9 +28,12 @@ function openDialog() {
 
   function closeDialog() {
     var agreeCheckbox = document.getElementById('agreeCheckbox');
-    var agreed = agreeCheckbox.checked;
+    var a = "";
 
-    if (agreed) {
+    if (agreeCheckbox.ckecked)
+      a = true;
+
+    if(a=true){
       alert("感謝您的同意！");
       
       document.getElementById('overlay').style.display = 'none'; 
