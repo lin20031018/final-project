@@ -307,8 +307,8 @@ img {
 
 .contant {
     object-fit: cover;
-    width: 45px;
-    height: 45px;
+    width: 30px;
+    height: 30px;
 
 }
 
@@ -363,4 +363,8 @@ img {
     padding: 10px 100px;
     display: block; /* Ensures the images won't have extra space */
     margin: auto; /* Centers the images horizontally */
+}
+
+table{
+    text-align: center;
 }

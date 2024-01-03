@@ -12,14 +12,72 @@
 }
 
 header {
-    background-color: #9d7cff;
+    background-color: #c8b6ff;
     position: fixed;
     width: 100%;
-    height: 15%;
+    height: 10%;
     z-index: 1;
     float: left;
 
 }
+
+
+ul ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 75px;
+    /*將顯示的選單向下移到合適位置 owo*/
+    width: 150px;
+}
+
+/* 顯示子清單 */
+ul li:hover>ul {
+    display: block;
+
+}
+
+/* 修飾樣式 */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #c8b6ff;
+    display: flex;
+}
+
+ul li {
+    position: relative;
+}
+
+ul a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #a112e4;
+}
+
+ul a:hover {
+    background-color: #ffd6ff;
+}
+
+nav {
+    background-color: #c8b6ff;
+    /*更改原本nav區塊的顏色跟列表清單一樣 owo */
+    position: fixed;
+    width: 80%;
+    height: 11%;
+    z-index: 1;
+    left: 20%;
+
+}
+
+.florig {
+    float: right;
+    /*讓nav向最右邊移動 owo */
+}
+
+
 
 h1 {
     text-align: center;
@@ -50,7 +108,7 @@ h1 {
 .links {
     margin-left: 30%;
     margin-top: 10px;
-    border:solid  #fff;
+    border: solid #fff;
     width: 500px;
     padding: 30px;
     border-radius: 15px;
@@ -66,7 +124,7 @@ h1 {
 .lens {
     grid-row: 1/3;
     grid-column: 1/2;
-    background-color:  #c8b6ff;
+    background-color: #e5dff5;
 
 
 }
@@ -87,19 +145,22 @@ main h2 {
 .cyim01 {
     grid-row: 2/3;
     grid-column: 1/2;
-    background-color: #c8b6ff;;
+    background-color: #e5dff5;
+    ;
 }
 
 .cyim02 {
     grid-row: 3/3;
     grid-column: 1/2;
-    background-color:  #c8b6ff;;
+    background-color: #e5dff5;
+    ;
 }
 
 
 
 .outcard {
-    background-color: #c8b6ff;;
+    background-color: #e5dff5;
+    ;
     padding: 1px;
     margin: 30px 10px;
     border-radius: 15px;
@@ -119,7 +180,8 @@ main h2 {
 }
 
 .outcard02 {
-    background-color: #c8b6ff;;
+    background-color: #e5dff5;
+    ;
     padding: 1px;
     margin: 30px 10px;
     border-radius: 15px;
@@ -139,7 +201,7 @@ main h2 {
 
 .card-container {
     perspective: 1000px;
-    
+
 }
 
 
@@ -169,7 +231,7 @@ main h2 {
 
 .front {
     /* 前面的样式 */
-    background-color:#c8b6ff;
+    background-color: #c8b6ff;
     text-align: center;
     line-height: 1.5;
     padding: 0px;
@@ -186,7 +248,7 @@ main h2 {
 
 .back {
     /* 背面的样式 */
-    background-color:  #9d7cff;
+    background-color: #9d7cff;
     text-align: center;
     line-height: 1.5;
     padding: 20px;
