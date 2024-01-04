@@ -1,0 +1,29 @@
+.marquee {
+    width: 100%;
+    /* 跑馬燈容器的寬度 */
+    overflow: hidden;
+    /* 隱藏超出部分 */
+    white-space: nowrap;
+    /* 讓文字不換行 */
+    box-sizing: border-box;
+    /* 考慮內邊距和邊框在內 */
+}
+
+.marquee p {
+    display: inline-block;
+    /* 讓文字水平排列 */
+    animation: marquee 10s linear infinite;
+    /* 動畫名稱 持續時間 運動曲線 重複次數 */
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+        /* 起始位置 */
+    }
+
+    100% {
+        transform: translateX(-100%);
+        /* 結束位置 */
+    }
+}

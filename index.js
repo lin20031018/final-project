@@ -43,3 +43,12 @@ function openDialog() {
   }
 
 
+  const marquee = document.querySelector('.marquee p');
+
+  function startMarquee() {
+      marquee.style.animationPlayState = 'running';
+  }
+
+  function stopMarquee() {
+      marquee.style.animationPlayState = 'paused';
+  }

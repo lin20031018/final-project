@@ -5,12 +5,12 @@
 }
 
 body {
-    background-color: #f5cc99;
+    background-color: #e5dff5;
     margin: 0px;
 }
 
 header {
-    background-color: #92caed;
+    background-color: #c8b6ff;
     text-align: center;
     padding: 20px;
     margin: 10px;
@@ -19,10 +19,16 @@ header {
 header img {
     max-width: 1000px;
     max-height: 300px;
+    border-radius: 15px;
 }
 
 nav {
-    background-color: #e5cad4;
+
+    border: solid #fff;
+    border-radius: 15px;
+    padding: 30px;
+    size: 15px;
+    background-color: #e5dff5;
     font-family: Arial;
     text-align: center;
     margin-bottom: 20px;
@@ -40,12 +46,12 @@ main {
 }
 
 main img {
-    width: 250px;
+    width: 200px;
     max-height: 150px;
 }
 
 .outcard {
-    background-color: rgb(233, 12, 178);
+    background-color: #c8b6ff;
     padding: 1px;
     margin: 60px 10px;
     margin-top: -5%;
@@ -67,7 +73,7 @@ main img {
     padding: 20px;
     margin: 10px;
     border-radius: 15px;
-    background-image: url(image/card_img.jpg);
+    background-image: url(image/螢幕擷取畫面\ 2023-12-16\ 174132.png);
     background-size: cover;
     flex: 2 1 300px;
 
@@ -84,7 +90,7 @@ main img {
 }
 
 footer {
-    background-color: #cda8b8;
+    background-color: #c8b6ff;
     color: #444444;
     text-align: center;
     padding: 10px;

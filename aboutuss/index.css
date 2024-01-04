@@ -15,9 +15,10 @@ header {
     background-color: #c8b6ff;
     position: fixed;
     width: 100%;
-    height: 10%;
+    height: 20%;
     z-index: 1;
     float: left;
+
 
 }
 
@@ -54,7 +55,7 @@ ul a {
     display: block;
     padding: 10px 15px;
     text-decoration: none;
-    color: #a112e4;
+    color: #0c0a0c;
 }
 
 ul a:hover {
@@ -62,18 +63,20 @@ ul a:hover {
 }
 
 nav {
-    background-color: #c8b6ff;
-    /*更改原本nav區塊的顏色跟列表清單一樣 owo */
+    background-color: #333;
+    /*更改原本nav區塊的顏色跟列表清單一樣 owo 
     position: fixed;
     width: 80%;
     height: 11%;
     z-index: 1;
-    left: 20%;
+    float: left;
+    left: 20%;*/
 
 }
 
 .florig {
     float: right;
+    height: 11%;
     /*讓nav向最右邊移動 owo */
 }
 
@@ -248,7 +251,7 @@ main h2 {
 
 .back {
     /* 背面的样式 */
-    background-color: #9d7cff;
+    background-color: #c8b6ff;
     text-align: center;
     line-height: 1.5;
     padding: 20px;

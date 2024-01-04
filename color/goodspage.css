@@ -9,6 +9,13 @@ body {
 }
 
 
+header {
+  width: 100%;
+  height: 70%;
+  z-index: 1;
+  left: 0%;
+  top: 0;
+}
 
 
 
@@ -49,13 +56,7 @@ ul a:hover {
   background-color: #ffd6ff;
 }
 
-header {
-  width: 100%;
-  height: 70%;
-  z-index: 1;
-  left: 10%;
 
-}
 
 footer {
   background-color: #c8b6ff;
@@ -77,27 +78,12 @@ main {
 
 
 
-.search-form {
-  text-align: center;
-}
 
 aside {
   grid-area: 4/1/5/3;
 }
 
 
-.search-form {
-  position: relative;
-  top: 35%;
-  text-align: center;
-}
-
-.search-input {
-  width: 200px;
-  height: 18px;
-  margin-right: 10px;
-  text-align: center;
-}
 
 
 .custom-list {
@@ -181,7 +167,7 @@ aside {
 
 .scrollbar {
   width: 60%;
-  background-color: #e4e4e4;
+  background-color: transparent;
   position: absolute;
   top: 0;
   right: 0;
@@ -218,12 +204,7 @@ img {
   border-radius: 5px;
 }
 
-input[type="text"] {
-  border: none;
-  border-bottom: 1px solid black;
-  outline: none;
-  height: 25px;
-}
+
 
 textarea {
   resize: none;
@@ -240,3 +221,37 @@ textarea {
   height: 30px;
 
 }
+
+.search-form {
+  position: relative;
+  top: 11px;
+}
+
+.search-input {
+      padding: 10px;
+      border: 2px solid #ccc;
+      border-radius: 30px;
+      vertical-align: middle;
+      display: inline-block;
+  }
+
+  .search-button img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    top: 30px;
+}
+
+.search-button{
+    top: 30px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: 100%;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+
