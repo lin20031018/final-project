@@ -8,10 +8,14 @@
     grid-template: 50% 50%/60% 40%;
 }
 
+body {
+    background-color: #e5dff5;
+}
+
 .per {
     grid-row: 1/2;
     grid-column: 1/2;
-    background-color: chocolate;
+    background-color: #c8b6ff;
     border-radius: 10px;
 }
 
@@ -26,13 +30,22 @@ fieldset {
 
 }
 
+
 /**/
 .shp {
     grid-row: 1/2;
     grid-column: 2/3;
-    background-color: blueviolet;
+    background-color: #c8b6ff;
     border-radius: 10px;
     padding: 20px;
+
+
+    display: flex;
+    /*ca*/
+    justify-content: center;
+    /*by*/
+    align-items: center;
+    /*ba*/
 }
 
 ul {
@@ -47,7 +60,7 @@ li {
 .art {
     grid-row: 2/3;
     grid-column: 1/3;
-    background-color: cadetblue;
+    background-color: #c8b6ff;
     border-radius: 10px;
 }
 

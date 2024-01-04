@@ -16,11 +16,12 @@
     */
 }
 
+/*
 header {
     background-color: #496e4c;
     position: fixed;
     width: 20%;
-    /*調整大小 owo*/
+    /*調整大小 owo
     height: 11%;
     z-index: 1;
     float: left;
@@ -28,7 +29,8 @@ header {
     background-image: url('img/logo1.jpg');
     background-size: 55%;
     background-position: center;
-}
+    }
+*/
 
 ul ul {
     display: none;
@@ -73,10 +75,9 @@ nav {
     background-color: #c8b6ff;
     /*更改原本nav區塊的顏色跟列表清單一樣 owo */
     position: fixed;
-    width: 80%;
+    width: 100%;
     height: 11%;
     z-index: 1;
-    left: 20%;
 
 }
 
@@ -190,9 +191,8 @@ a {
 .acttitle {
     position: relative;
     left: 40px;
-    top: 50px;
+    top: 0px;
     font-size: 50px;
-    background-color: #c8b6ff;
     border-radius: 20px;
     max-width: 400px;
     text-align: center;
@@ -200,11 +200,25 @@ a {
 
 .map {
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 5%;
+    justify-content: center;
 
 }
+
+.footertext{
+    justify-content: center;
+    align-items: center;
+}
+h3{
+    text-align: left;
+    font-size: x-large;
+}
+
+.maptb{
+    top: 70px;
+    margin-left: 20%;
+}
+
 
 .outside {
     background-color: #ec6ec6;
@@ -228,13 +242,12 @@ a {
 
 
 footer {
-    position: relative;
-    top: 200px;
-    background-color: #588157;
+    background-color: #c8b6ff;
+    color: #444444;
     width: 100%;
-    height: 300px;
-
-}
+    height: 100px;
+  }
+  
 
 .contantimg {
     width: 45px;
@@ -327,11 +340,15 @@ img {
 }
 
 #dialog {
-    background: white;
-    padding: 20px;
+    text-align: center;
+    font-size: larger;
+    background-color: white;
+    width: 20%;
+    height: 10%;
+    padding: 50px;
     border-radius: 5px;
+    vertical-align: middle;
 }
-
 @keyframes fade {
     0% {
         opacity: 0.4;
@@ -407,6 +424,7 @@ border-radius: 10px;
 
 table {
     text-align: center;
+    justify-content: center;
 }
 
 
@@ -441,4 +459,8 @@ table {
         transform: translateX(-100%);
         /* 結束位置 */
     }
+}
+
+.act{
+    margin-top: 100px;
 }

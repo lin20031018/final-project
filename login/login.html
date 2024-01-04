@@ -1,37 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<%@page contentType="text/html"%> 
+<%@page pageEncoding="UTF-8"%>
+<%@ page import = "java.sql.*" %>
+
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>會員登入</title>
-    <link rel="stylesheet" href="login.css">
-    <script src="login.js"></script>
+<title>會員登入</title>
+<script>
+
+</script>
+<link rel="stylesheet" href="login.css">
+<style>
+body {
+ 
+  font-family: Arial;  
+}
+
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+   
+  
+}
+
+</style>
 </head>
 <body>
-    <form name="loginform" method="post" action="" >
-        <fieldset>  
-            <h2>會員登入</h2>
-            <br/>
-            <p>如果已註冊過帳號請直接登入</p>
-            <br/>
-            <div class="a01">
-                帳號:<input type="text" placeholder="輸入帳號" onfocus="this.placeholder=''" onblur="this.placeholder='輸入帳號'" name="id" id="id" style="padding: 5px; width: 230px;"/>
-            </div>
-            <div class="a01">
-                密碼:<input type="password" placeholder="輸入密碼" onfocus="this.placeholder=''" onblur="this.placeholder='輸入密碼'" name="password" id="password" style="padding: 5px; width: 230px;"/>
-            </div>
-            
-            <br/>
-            <p style="text-align:center ;">尚未成為會員?前往<a href="register.html">註冊</a></p><br/>
-            <div style="text-align: center;">
-                <input class="button" type="submit" value="登入"/>
-                <input class="button" type="reset" value="重填"/>
-                <input class="button" type="button" value="test" onclick="login_in()"/>
-            </div>
-            
-        </fieldset>
-    </form>
-    
+<%
+String message=request.getParameter("message");
+%>
+
+
+<form action="checkLogin.jsp" method = "post">
+   <h1>會員登入</h1><br> 
+  <label for="username">帳號:</label>
+  <input type="text" id="username" name="username" placeholder="請輸入帳號" onfocus="this.placeholder=''" onblur="this.placeholder='請輸入帳號'"> 
+  <p style="color:red;"><%if(message != null && !message.isEmpty())
+		{out.print(message);
+		}
+	%> </p><br>
+  
+  <label for="password">密碼:</label>
+  <input type="password" id="password" name="password" placeholder="請輸入密碼" onfocus="this.placeholder=''" onblur="this.placeholder='請輸入密碼'"><br><br>
+
+  <input type="submit" value="登入"> </input>
+  <br>
+  <a href="final/register.jsp" style="color:#8751fb ;">尚未成為會員?點這裡註冊!</a>
+  <a href="final/recover.jsp" style="float:right ;color:#8751fb">忘記密碼</a>
+</form>
+
 </body>
 </html>
