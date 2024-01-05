@@ -46,7 +46,14 @@ function addTocart(item) {
     selectedItem.appendChild(quantityDiv);
 
     // Assuming that each item has a unique price class
-    var priceClass = item.id === 'item1' ? 'price1' : 'price2';
+    var priceOptions = {
+        'item1': 'price1',
+        'item2': 'price2',
+        'item3': 'price3',
+        // 增加商品這裡需增加
+      };
+      
+    var priceClass = priceOptions[item.id] || 'defaultPrice';
     var priceElement = document.querySelector('.' + priceClass);
 
     if (priceElement) {

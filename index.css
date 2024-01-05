@@ -7,6 +7,7 @@
     width: auto;
     display: grid;
     grid-template: 700px 400px 400px 500px 1000px /100%;
+
     /*grid-auto-flow: row;
 
     /*grid-template-areas: 
@@ -165,6 +166,7 @@ a {
     grid-column: 1/2;
     background-color: white;
     margin: 0;
+    
 
 }
 .runn{
@@ -175,6 +177,7 @@ a {
     margin-top: 50px;
     text-align: center;
 }
+
 .m02 {
     grid-row: 2/3;
     grid-column: 1/2;
@@ -275,18 +278,21 @@ footer {
 
 .slideshow-container {
     padding: 0px 50px 0px 50px;
-    max-width: auto;
+    max-width: 1600px;
     position: relative;
     margin: auto;
-    top: 10%;
+    top: 16%;
 }
 
 .singleSlide {
     display: flex;
+    
+
 }
 
-.singleSlide,
+.singleSlide
 img {
+    top: 100%;
     width: 100%;
     height: 631px;
     object-fit: cover;
@@ -400,6 +406,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    
     /* Add this line to center the flex items */
 }
 
@@ -413,7 +420,7 @@ img {
 }
 
 .card-container1 img {
-border-radius: 10px;
+border-radius: 20px;
 }
 
 .search-button img {

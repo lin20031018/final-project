@@ -185,9 +185,9 @@ header {
     display: none;
     position: absolute;
     left: 0;
-    top: 50px;
+    top: 70px;
     /*將顯示的選單向下移到合適位置 owo*/
-    width: 160px;
+    width: 210px;
 }
 
 /* 顯示子清單 */
