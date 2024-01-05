@@ -153,59 +153,92 @@
 
 </head>
 <body onload="displayData(),displayShoppingList(shoppingData),displaytextarea() ">
+
+
     <header>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </header>
+    <nav>
+        <div class="florig">
+            <ul class="menu">
+                <li><a href="#">產品目錄</a>
+                <ul id="sb">
+                    <!--li><a href="brand_zone/brand_design/brand.html">品牌</a></li-->
+                    <li><a href="color/layout_demo.html">彩色隱形眼鏡</a></li>
+                    <li><a href="transparent/layout_demo1.html">透明隱形眼鏡</a></li>
+                    <li><a href="maintenance/layout_demo.html">保養液</a></li>
+                </ul>
+                </li>
+                <li><a href="aboutuss/aboutus.html">關於我們</a>
+                </li>
+                <li><a href="login/login.html">登入</a></li>
+                <li><form class="search-form">
+                    <input type="text" class="search-input" placeholder="收尋">
+                    <button type="submit" class="search-button"><img src="search.jpg" alt="Search Icon" style="height:40px; width:40px;"></button>
+                    </form>
+                </li>
+                <li><a href="shpcart/shpcart copy.html"><img src="shh.png" style="height:50px; width:50px;"  ></a></li>
+                <li><a href="member/member.html"><img src="meme.png" style="height:50px; width:50px;" ></a></li>
+                <li><a href="">登入者您好</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <div class="clear"></div>
+   
     <div class="containermember">
         <div class="per">
             <form method="post" action=""> <!--會員資料表單-->
                 
                 <fieldset>
                     <legend><h2>會員基本資料</h2></legend>
-                    <table class="pertable" border="1">
+                    <table class="pertable" border="0">
                         <tr>
                             <th>帳號</th>
-                            <td><input type="text" name="id" id="id"></td>
+                            <td><input class="foinput" type="text" name="id" id="id"></td>
                         </tr>
                         <tr>
                             <th>性別</th>
-                            <td><input type="radio" class="sex" name="gender" value="男">男<input type="radio" class="sex" name="gender" value="女">女</td>
+                            <td><input class="foinput" type="radio" class="sex" name="gender" value="男">男<input type="radio" class="sex" name="gender" value="女">女</td>
                         </tr>
                         <tr>
                             <th>生日</th>
-                            <td><input type="date" name="birth" id="birth"></td>
+                            <td><input class="foinput" type="date" name="birth" id="birth"></td>
                         </tr>
 
                         <tr>
                             <th>度數</th>
                             <td>
-                                左眼:
-                                <select size="1" name="lefteye" id="lefteye">  <!--先放這樣，根據商品的度數還會在增加-->
-                                    <option>1.00</option>
-                                    <option>1.25</option>
-                                    <option>1.50</option>
-                                    <option>1.75</option>
-                                </select>
-                                右眼:
-                                <select size="1" name="righteye" id="righteye"> <!--先放這樣，根據商品的度數還會在增加-->
-                                    <option>1.00</option>
-                                    <option>1.25</option>
-                                    <option>1.50</option>
-                                    <option>1.75</option>
-                                </select>
+                                左眼
+                                <input class="foinput" type="text" name="lefteye" id="lefteye">  
+                                
                             </td>
+                            <td>
+                                右眼
+                                <input class="foinput" type="text" name="righteye" id="righteye">
+                            </td>
+                                
                         </tr>
                         <tr>
                             <th>地址</th>
-                            <td><input type="text" id="address"></td>
+                            <td><input class="foinput" type="text" id="address"></td>
                         </tr>
                     </table>
-                    <input type="button" value="更新資料" onclick="updateData()">
+                    <input class="button" type="button" value="更新資料" onclick="updateData()">
                 </fieldset>
             </form>       
-        </div>    
-        <div class="shp" id="shoppingList"> <!--購物清單-->
-                <!--顯示紀錄位置-->
         </div>
+        <div class="shp">
+            <div class="shptitle">
+                <h2>購物清單</h2>
+            </div>
+            
+            <div class="inshp" id="shoppingList"> <!--購物清單-->
+                <!--顯示紀錄位置-->
+            </div>
+        </div>
+
         <div class="art">
             <form class="textarea" id="textarea" action="" method=""> <!--記事本表單-->
                 <table class="arttable">
@@ -213,10 +246,12 @@
                         <th style="text-align: left;"><h2>記事本</h2></th>    
                     </tr>
                     <tr>
-                        <td ><textarea ></textarea></td>
+                        <td><textarea></textarea></td>
                     </tr>
+                    
                 </table>
-                <input type="button" value="記錄" onclick="updatetextarea()">
+                <div class="clear"></div>
+                <input class="button" type="button" value="記錄" onclick="updatetextarea()">
             </form>
         </div>
     </div>

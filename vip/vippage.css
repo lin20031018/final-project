@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #f3f1fa;
   margin: 0px;
 }
 
@@ -66,17 +66,18 @@ footer {
 }
 
 main {
-  padding: 30px;
+ 
   display: grid;
   width: 100%;
 
-
+  margin-top: 50px;
   grid-template-rows: 1fr 1fr;
   grid-gap: 1cm;
 }
 
+
 nav {
-  background-color: #ffffff;
+  background-color: #f3f1fa;
   color: black;
   text-align: center;
   padding: 20px;

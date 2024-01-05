@@ -42,16 +42,16 @@ function displayShoppingList(data) {
 
     if (data && data.items && data.items.length > 0) {
         //創建清單
-        const ul = document.createElement('ul');
+        const ol = document.createElement('ol');
 
         data.items.forEach(item => {
             const li = document.createElement('li');
             li.innerText = `${item.title}: $${item.price}`;
-            ul.appendChild(li);
+            ol.appendChild(li);
         });
 
         // 將清單添加到容器中
-        shoppingListContainer.appendChild(ul);
+        shoppingListContainer.appendChild(ol);
     } else {
         shoppingListContainer.innerText = '購物清單為空。';
     }
