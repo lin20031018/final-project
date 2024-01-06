@@ -1,0 +1,55 @@
+body {
+    background-image: url('/asset/img/loginbg.png');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    text-align: center;
+    margin: 0 auto;
+    color: #8751fb;
+    font-size: 80px;
+
+}
+
+h2 {
+    text-align: center;
+    margin: 0 auto;
+    color: #8751fb;
+    font-size: 40px;
+
+}
+
+form {
+    margin: 5% auto;
+    border: 2px solid #9d70fe;
+    border-radius: 15px;
+    background-color: #d6c7f7;
+    padding: 20px;
+}
+
+label,
+input,
+select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    font-size: 20px;
+    color: #8751fb;
+}
+
+input[type="submit"] {
+    background-color: #9d70fe;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 20px;
+
+}
+
+input[type="submit"]:hover {
+    background-color: #c7adff;
+}

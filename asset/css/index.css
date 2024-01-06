@@ -1,0 +1,488 @@
+* {
+    margin: 0px;
+}
+
+.container01 {
+
+    width: auto;
+    display: grid;
+    grid-template: 700px 400px 400px 500px 1000px /100%;
+
+    /*grid-auto-flow: row;
+
+    /*grid-template-areas: 
+    "header header header"
+    "sidebar main main"
+    "footer footer footer";
+    */
+}
+
+/*
+header {
+    background-color: #496e4c;
+    position: fixed;
+    width: 20%;
+    /*調整大小 owo
+    height: 11%;
+    z-index: 1;
+    float: left;
+
+    background-image: url('img/logo1.jpg');
+    background-size: 55%;
+    background-position: center;
+    }
+*/
+
+ul ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 75px;
+    /*將顯示的選單向下移到合適位置 owo*/
+    width: 150px;
+}
+
+/* 顯示子清單 */
+ul li:hover>ul {
+    display: block;
+
+}
+
+/* 修飾樣式 */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #c8b6ff;
+    display: flex;
+}
+
+ul li {
+    position: relative;
+}
+
+ul a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #a112e4;
+}
+
+ul a:hover {
+    background-color: #ffd6ff;
+}
+
+nav {
+    background-color: #c8b6ff;
+    /*更改原本nav區塊的顏色跟列表清單一樣 owo */
+    position: fixed;
+    width: 92%;
+    left: 8%;
+    height: 11%;
+    z-index: 1;
+
+}
+
+.florig {
+    float: right;
+    /*讓nav向最右邊移動 owo */
+}
+
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 180px;
+    /*調整大小 owo*/
+    height: 11%;
+    z-index: 1;
+    float: left;
+
+    
+    background-size: contain;
+    background-position: center;
+
+}
+#overlay {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+#dialog {
+    text-align: center;
+    font-size: larger;
+    background-color: white;
+    width: 60%;
+    height: 50%;
+    padding: 50px;
+    border-radius: 5px;
+    vertical-align: middle;
+}
+
+.hidden {
+    display: none;
+}
+
+.navtext,
+a {
+    position: relative;
+    top: 30%;
+    font-size: 30px;
+    text-align: center;
+    word-spacing: 100px;
+    color: #496e4c;
+    text-decoration: none;
+
+}
+
+.clear {
+    float: none;
+}
+
+/*aside{
+    background-color: #a3b18a;
+    
+    grid-row: 1/2;
+    grid-column: 1/2;
+}*/
+/*main{
+    background-color: #dad7cd;
+    grid-area: main;
+    grid-row: 2/3;
+    grid-column: 2/4;
+}*/
+
+.ad {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    background-color: white;
+    margin: 0;
+    
+
+}
+.runn{
+    grid-row: 3/4;
+    grid-column: 1/2;
+    background-color: white;
+    margin: 10px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.m02 {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    background-color: #ffffff;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+
+.graph01 {
+    display: flex;
+    padding: 50px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.m03 {
+    grid-row: 4/5;
+    grid-column: 1/2;
+    background-color: #ffffff;
+    margin-top: 50px;
+}
+
+
+
+
+
+.acttitle {
+    position: relative;
+    left: 40px;
+    top: 0px;
+    font-size: 50px;
+    border-radius: 20px;
+    max-width: 400px;
+    text-align: center;
+}
+
+.map {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+h3{
+    text-align: left;
+    font-size: x-large;
+}
+
+.maptb{
+    top: 70px;
+    margin-left: 20%;
+}
+
+
+.outside {
+    background-color: #ec6ec6;
+    text-align: left;
+    padding: 5%;
+    height: 50px;
+    width: 90%;
+}
+
+.imgposition {
+    max-height: 50px;
+    max-width: 50px;
+    float: right;
+    margin-left: 10px;
+}
+
+.shpname {
+    position: relative;
+    top: 25px;
+}
+
+
+footer {
+    background-color: #c8b6ff;
+    color: #444444;
+    width: 100%;
+    height: auto;
+  }
+
+.contantimg {
+    width: 45px;
+    height: 45px;
+    border-radius: 15%;
+
+
+}
+
+/*以上為網頁排版*/
+
+.slideshow-container {
+    padding: 0px 50px 0px 50px;
+    max-width: 1600px;
+    position: relative;
+    margin: auto;
+    top: 16%;
+}
+
+.singleSlide {
+    display: flex;
+    
+
+}
+
+.singleSlide
+img {
+    top: 100%;
+    width: 100%;
+    height: 631px;
+    object-fit: cover;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0px 0px 3px;
+    border: transparent solid 1px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: whitesmoke;
+    background-color: #c8b6ff;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    border: transparent solid 1px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: whitesmoke;
+    background-color: #c8b6ff;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: #ffd6ff;
+    color: #ffffff !important;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.left {
+    float: left;
+    width: 80%;
+}
+
+.contant {
+    object-fit: cover;
+    width: 30px;
+    height: 30px;
+
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+#dialog {
+    text-align: center;
+    font-size: larger;
+    background-color: white;
+    width: 20%;
+    height: 10%;
+    padding: 50px;
+    border-radius: 5px;
+    vertical-align: middle;
+}
+@keyframes fade {
+    0% {
+        opacity: 0.4;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.search-form {
+    position: relative;
+    top: 30px;
+}
+
+.search-input {
+        padding: 10px;
+        border: 2px solid #ccc;
+        border-radius: 30px;
+        vertical-align: middle;
+        display: inline-block;
+    }
+
+.card-container {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Add this line to center the flex items */
+}
+
+.card-container1{
+    margin-top: 30px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    /* Add this line to center the flex items */
+}
+
+.card-container img {
+
+    padding: 10px 100px;
+    display: block;
+    /* Ensures the images won't have extra space */
+    margin: auto;
+    /* Centers the images horizontally */
+}
+
+.card-container1 img {
+border-radius: 20px;
+}
+
+.search-button img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    top: 30px;
+}
+
+.search-button{
+    top: 30px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: 100%;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.foter{
+    position: relative;
+    left: 40%;
+
+}
+
+
+
+/* 以下為跑馬燈排版 */
+.marquee {
+    width: 100%;
+    /* 跑馬燈容器的寬度 */
+    overflow: hidden;
+    /* 隱藏超出部分 */
+    white-space: nowrap;
+    /* 讓文字不換行 */
+    box-sizing: border-box;
+    /* 考慮內邊距和邊框在內 */
+}
+
+.marquee p {
+    font-size: xx-large;
+    display: inline-block;
+    /* 讓文字水平排列 */
+    animation: marquee 10s linear infinite;
+    /* 動畫名稱 持續時間 運動曲線 重複次數 */
+    font-weight: bold;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+        /* 起始位置 */
+    }
+
+    100% {
+        transform: translateX(-100%);
+        /* 結束位置 */
+    }
+}
+
+.act{
+    margin-top: 100px;
+}
