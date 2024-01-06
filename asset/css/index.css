@@ -37,15 +37,15 @@ ul ul {
     display: none;
     position: absolute;
     left: 0;
-    top: 75px;
+    top: 100%;
     /*將顯示的選單向下移到合適位置 owo*/
-    width: 150px;
+    width: 100%;
+    background-color: #c8b6ff;
 }
 
 /* 顯示子清單 */
 ul li:hover>ul {
     display: block;
-
 }
 
 /* 修飾樣式 */
@@ -55,15 +55,23 @@ ul {
     padding: 0;
     background-color: #c8b6ff;
     display: flex;
+    justify-content: flex-end;
+    
 }
 
 ul li {
     position: relative;
 }
 
+li {
+    padding-right: 5%;
+    
+}
+
 ul a {
     display: block;
-    padding: 10px 15px;
+    width: 100%;
+    padding-top: 5%;
     text-decoration: none;
     color: #a112e4;
 }
@@ -72,7 +80,11 @@ ul a:hover {
     background-color: #ffd6ff;
 }
 
-nav {
+/*nav {
+    
+}*/
+
+.florig {
     background-color: #c8b6ff;
     /*更改原本nav區塊的顏色跟列表清單一樣 owo */
     position: fixed;
@@ -81,10 +93,7 @@ nav {
     height: 11%;
     z-index: 1;
 
-}
-
-.florig {
-    float: right;
+    
     /*讓nav向最右邊移動 owo */
 }
 
@@ -93,7 +102,7 @@ header {
     top: 0;
     left: 0;
     position: fixed;
-    width: 180px;
+    width: 8%;
     /*調整大小 owo*/
     height: 11%;
     z-index: 1;
@@ -102,6 +111,8 @@ header {
     
     background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(/asset/img/logo.jpg);
 
 }
 #overlay {
@@ -393,12 +404,16 @@ img {
     }
 
 .card-container {
-    margin-top: 50px;
+    margin-top: 5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
+    height: 100%;
     /* Add this line to center the flex items */
 }
+
+
 
 .card-container1{
     margin-top: 30px;
@@ -410,11 +425,17 @@ img {
     /* Add this line to center the flex items */
 }
 
-.card-container img {
+.cdi {
+    width: 30%;
+}
 
-    padding: 10px 100px;
+.cdi img {
+    padding-left: 0%;
     display: block;
+    max-width: 100%;
     /* Ensures the images won't have extra space */
+    position: relative;
+    bottom: 25%;
     margin: auto;
     /* Centers the images horizontally */
 }

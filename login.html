@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<%@page contentType="text/html"%> 
-<%@page pageEncoding="UTF-8"%>
-<%@ page import = "java.sql.*" %>
-
-<html>
+<html lang="en">
 <head>
-<title>會員登入</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="asset/img/ag7cf-drmwf-001.ico" type="image/x-icon">
+  <title>會員登入</title>
 <script>
 
 </script>
@@ -28,27 +28,23 @@ form {
 </style>
 </head>
 <body>
-<%
-String message=request.getParameter("message");
-%>
+
 
 
 <form action="checkLogin.jsp" method = "post">
    <h1>會員登入</h1><br> 
   <label for="username">帳號:</label>
   <input type="text" id="username" name="username" placeholder="請輸入帳號" onfocus="this.placeholder=''" onblur="this.placeholder='請輸入帳號'"> 
-  <p style="color:red;"><%if(message != null && !message.isEmpty())
-		{out.print(message);
-		}
-	%> </p><br>
+  <p style="color:red;">
+		 </p><br>
   
   <label for="password">密碼:</label>
   <input type="password" id="password" name="password" placeholder="請輸入密碼" onfocus="this.placeholder=''" onblur="this.placeholder='請輸入密碼'"><br><br>
 
   <input type="submit" value="登入"> </input>
   <br>
-  <a href="final/register.jsp" style="color:#8751fb ;">尚未成為會員?點這裡註冊!</a>
-  <a href="final/recover.jsp" style="float:right ;color:#8751fb">忘記密碼</a>
+  <a href="register.html" style="color:#8751fb ;">尚未成為會員?點這裡註冊!</a>
+  <a href="recover.html" style="float:right ;color:#8751fb">忘記密碼</a>
 </form>
 
 </body>

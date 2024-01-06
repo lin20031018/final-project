@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<%@page contentType="text/html"%> 
-<%@page pageEncoding="UTF-8"%>
-<%@ page import = "java.sql.*" %>
-
-<html>
+<html lang="en">
 <head>
-<title>Member Register</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="asset/img/ag7cf-drmwf-001.ico" type="image/x-icon">
+<head>
+<title>會員註冊</title>
 <style>
 body {
   font-family: Arial;
@@ -67,51 +68,21 @@ input[type="submit"]:hover {
 </style>
 </head>
 <body>
-<%
-String username=request.getParameter("username");
-String email=request.getParameter("email");
-String birthday=request.getParameter("birthday");
-String gender=request.getParameter("gender");
-String lnearsighted=request.getParameter("lnearsighted");
-String rnearsighted=request.getParameter("rnearsighted");
-
-String messageUsername=request.getParameter("messageUsername");
-String messagePassword=request.getParameter("messagePassword");
-String messageEmail=request.getParameter("messageEmail");
-boolean isDup = false;
-if(request.getParameter("duplicated") != null){
-	if(request.getParameter("duplicated").equals("true")){
-		isDup = Boolean.parseBoolean(request.getParameter("duplicated"));
-	}
-}
-%>
-
 
 <form action="checkRegister.jsp" method = "post">
   <h1>會員註冊</h1><br>
   <label for="username">帳號:</label>
-  <input class="a01" type="text" id="username" name="username" value="<%if(username != null)out.print(username);%>" placeholder="請輸入帳號" onfocus="this.placeholder=''" onblur="this.placeholder='請輸入帳號'"> 
-  <p style="color:red;"><%if(messageUsername != null && !messageUsername.isEmpty())
-		{out.print(messageUsername);
-		}
-		else if(isDup){
-			out.print(messageUsername);
-		}
-	%> </p><br>
+  <input class="a01" type="text" id="username" name="username" value="" placeholder="請輸入帳號" onfocus="this.placeholder=''" onblur="this.placeholder='請輸入帳號'"> 
+  <p style="color:red;">
+	</p><br>
   
   <label for="password">密碼:</label>
   <input class="a01" type="password" id="password" name="password" placeholder="請輸入密碼" onfocus="this.placeholder=''" onblur="this.placeholder='請輸入密碼'">
-  <p style="color:red;"><%if(messagePassword != null && !messagePassword.isEmpty())
-		{out.print(messagePassword);
-		} 
-	%> </p><br>
+  <p style="color:red;"> </p><br>
 
   <label for="email">E-mail:</label>
-  <input class="a01" type="text" id="email" name="email" value="<%if(email != null)out.print(email);%>" placeholder="輸入電子郵件" onfocus="this.placeholder=''" onblur="this.placeholder='輸入電子郵件'">
-  <p style="color:red;"><%if(messageEmail != null && !messageEmail.isEmpty())
-		{out.print(messageEmail);
-		}
-	%> </p><br>
+  <input class="a01" type="text" id="email" name="email" value="" placeholder="輸入電子郵件" onfocus="this.placeholder=''" onblur="this.placeholder='輸入電子郵件'">
+  <p style="color:red;"></p><br>
 
   <label for="birthday">生日:</label>
   <input class="a01" type="date" id="birthday" name="birthday" value="<%=birthday%>" ><br><br>
@@ -119,8 +90,8 @@ if(request.getParameter("duplicated") != null){
   <label for="gender">性別:</label>
   <select id="gender" name="gender">
 	<option value="" selected disabled hidden>擇一</option>
-    <option value="male" <% if("male".equals(gender)) { %> selected <% } %> >男</option>
-    <option value="female" <% if("female".equals(gender)) { %> selected <% } %> >女</option>
+    <option value="male" >男</option>
+    <option value="female">女</option>
   </select><br><br>
   
   <div style="display: flex; justify-content: center;">
@@ -146,7 +117,7 @@ if(request.getParameter("duplicated") != null){
 
   <input class="a01" type="submit" value="註冊">
   <br>
-  <a href="login.jsp" style="color:#8751fb ;">已經成為會員?點這裡登入!</a>
+  <a href="login.html" style="color:#8751fb ;">已經成為會員?點這裡登入!</a>
   
 </form>
 

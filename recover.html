@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<%@page contentType="text/html"%> 
-<%@page pageEncoding="UTF-8"%>
-<%@ page import = "java.sql.*" %>
-
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
 <title>Member Register</title>
 <link rel="stylesheet" href="asset/css/login.css">
+<link rel="icon" href="asset/img/ag7cf-drmwf-001.ico" type="image/x-icon">
 <style>
 body {
   font-family: Arial;  
@@ -34,20 +35,16 @@ input {
 </style>
 </head>
 <body>
-<%
-String message=request.getParameter("message");
-%>
-
 
 <form action="checkRecover.jsp" method = "post">
   <h1>忘記密碼?</h1><br>
-  <label for="username">請問您的帳號?:</label>
+  <label for="username">請問您的帳號?</label>
   <input type="text" id="username" name="username" placeholder="輸入帳號" onfocus="this.placeholder=''" onblur="this.placeholder='輸入帳號'"><br><br>
 
-  <label for="email">請問您的電子郵件?:</label>
+  <label for="email">請問您的電子郵件?</label>
   <input type="text" id="email" name="email" placeholder="輸入電子郵件" onfocus="this.placeholder=''" onblur="this.placeholder='輸入電子郵件'"><br><br>
 
-  <label for="birthday">請問您的生日?:</label>
+  <label for="birthday">請問您的生日?</label>
   <input type="date" id="birthday" name="birthday"><br><br>
   
     <label for="gender">性別:</label>
@@ -60,10 +57,6 @@ String message=request.getParameter("message");
   <input type="submit" value="送出"> </input>
   <br>
 	<p style="color:red;">
-		<%if(message != null && !message.isEmpty()){
-			out.print(message);
-			}
-		%>
 	</p>
 </form>
 

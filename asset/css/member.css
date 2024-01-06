@@ -9,9 +9,10 @@
 }
 
 body {
-    background-image: url('/asset/img/loginbg.png');
+    background-image: url("/asset/img/loginbg.png");
     background-size: cover;
     background-attachment: fixed;
+    z-index: 1;
 }
 
 .per {
